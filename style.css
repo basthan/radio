@@ -1,0 +1,243 @@
+body {
+  background-color: #E6E8E7;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Product Sans', 'Proxima Nova', 'Gotham', 'Helvetica Neue', Sans Serif;
+  color: #00030c;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.5;
+  text-shadow: 3px 2px red;
+}
+h2 {
+  font-family: 'Product Sans', 'Proxima Nova', 'Gotham', 'Helvetica Neue', Sans Serif;
+  color: #00030c;
+  font-size: 1em;
+  font-weight: 600;
+  opacity: 0.5;
+  text-transform: capitalize;
+  text-align: justify;
+}
+h3 {
+  font-family: 'Product Sans', 'Proxima Nova', 'Gotham', 'Helvetica Neue', Sans Serif;
+  color: #00030c;
+  font-size: 1em;
+  font-weight: 600;
+  opacity: 0.5;
+  margin-top: 31px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.blue-square-container {
+  text-align: center;
+}
+
+.blue-square {
+  background-color: #f0f2f1;
+  width: 100px;
+  height: 100px;
+}
+
+.box-container {
+  /* background-color: #FFDC00; */
+  background-color: #f0f2f1;
+  border-radius: 10px;
+  width: 360px;
+  height: 360px;
+  margin: 0 auto;
+  margin-top: 150px;
+  box-shadow: 0px 0px 3px red;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.status {
+  border-radius: 10px 10px 10px 10px;
+  width: 360px;
+  height: 40px;
+  position: absolute;
+  margin-top: -40px;
+  text-align: center;
+}
+
+.box-top {
+  border-radius: 10px 10px 10px 10px;
+  width: 320px;
+  height: 80px;
+  position: absolute;
+  margin: auto;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.line {
+  width: 360px;
+  height: 3px;
+  margin-top: 280px;
+  box-shadow: 0px 0px 3px grey;
+  position: absolute;
+  opacity: 0.15;
+}
+
+.playpause-square {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10%;
+  top: 28%;
+}
+
+.mute-square {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 30%;
+  top: 28%;
+}
+
+.volume-square {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  left: 40%;
+  top: 18%;
+}
+
+.box-bottom {
+  background-color: #f3f5f4;
+  border-radius: 0px 0px 10px 10px;
+  width: 360px;
+  height: 80px;
+  position: absolute;
+  margin: auto;
+  margin-top: 280px;
+}
+
+button{ border:none; cursor:pointer; outline:none; }
+button#playpausebtn{
+	background:url(images/pause.png) no-repeat;
+	width: 30px; 
+    height: 30px;
+	background-size: 30px 30px;
+}
+button#mutebtn{
+	background:url(images/speaker.png) no-repeat;
+	width:30px;
+	height:30px;
+	background-size: 30px 30px;
+}
+input{ border:none; cursor:pointer; outline:none; }
+input#volumeslider{
+	position: relative;
+	top: 28%;
+}
+
+
+
+.slider{
+  -webkit-appearance: none;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:focus {
+    outline: none;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 90%;
+  height: 5px;
+  background: #E6E8E7;
+  border: none;
+  border-radius: 3px;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -4px;
+  cursor: pointer;
+}
+/* #4CAF50 */
+.slider::-moz-range-track {
+  width: 90%;
+  height: 5px;
+  background: #E6E8E7;
+  border: none;
+  border-radius: 3px;
+}
+.slider::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.slider:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+.slider:focus::-moz-range-track {
+    background: #E6E8E7;
+}
+
+.slider::-ms-track {
+    width: 300px;
+    height: 5px;
+    
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+
+    /*remove default tick marks*/
+    color: transparent;
+}
+.slider::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+.slider::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+.slider::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+	margin-top: -2px;
+    border-radius: 50%;
+    background: goldenrod;
+}
+
+.slider:focus::-ms-fill-lower {
+    background: #888;
+}
+.slider:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+.slider:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
